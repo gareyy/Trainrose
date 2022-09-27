@@ -1,0 +1,259 @@
+.splash {
+    color: white;
+    background-color: #111111;;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+    background-color: #111111;
+}
+
+input {
+    font-family: Arial;
+    font-size: 14px;
+    border: none;
+    /*color: #506784;*/
+    color: #AAAAAA;
+    background-color: #111111;
+}
+
+input:focus {
+    outline: none;
+}
+
+.stationinput {
+    /*color: #506784;*/
+    color: #AAAAAA;
+    width: 240px;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.monthinput {
+    width: 80px;
+}
+
+.downarrow {
+    border: solid #506784;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-right: 3px;
+    margin-bottom: 1px;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.downarrow:hover {
+    cursor: text;
+}
+
+.box {
+    white-space: nowrap;
+    padding: 4px;
+    border: 1px solid #506784;
+    display: inline-block;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    
+}
+
+.box:hover {
+    cursor: text;
+}
+
+.stationdropdown {
+    position: absolute;
+
+    background-color: #111111;
+    border: 1px solid #506784;
+    border-top: none;
+    border-bottom: none;
+    width: 268px;
+    max-height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    z-index: 4;
+}
+
+.stationdropdown::-webkit-scrollbar {
+    display: none;
+}
+
+.monthdropdown {
+    position: absolute;
+    background-color: #111111;
+    border: 1px solid #506784;
+    border-top: none;
+    border-bottom: none;
+    width: 108px;
+    max-height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    z-index: 4;
+}
+
+.monthdropdown::-webkit-scrollbar {
+    display: none;
+}
+
+.station {
+    color: #506784;
+    font-family: Arial;
+    font-size: 14px;
+    padding: 6px;
+    width: auto;
+}
+
+.station:hover {
+    color: #111111;
+    background-color: #506784;
+    cursor: pointer;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #506784;
+    opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #506784;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #506784;
+}
+
+.left {
+    height: 100vh;
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    height: 100vh;
+    width: 100%;
+    padding: 8px;
+    margin-right: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.divider {
+    height: 100vh;
+    min-width: 1px;
+    background-color: #506784;
+    
+}
+
+.row {
+    display: flex;
+}
+
+.space {
+    min-width: 8px;
+}
+
+.yspace {
+    min-height: 8px;
+}
+
+.button {
+    /*border: 1px solid #506784;*/
+    background-color: #111111;
+    color: #506784;
+    font-family: Arial;
+    font-size: 14px;
+    padding: 4px;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+}  
+
+.fixed {
+    min-width: 100%;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.on {
+    color: #AAAAAA;
+}
+
+.logo {
+    font-family: arial;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 6px;
+    margin-right: 8px;
+    white-space: nowrap;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    color: #AAAAAA;
+}
+
+.graphcontainer {
+    border: 1px solid #506784;
+    flex-grow: 1;
+    margin-bottom: 16px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.loader {
+    border: 2px solid #AAAAAA;
+    border-radius: 50%;
+    border-top: 2px solid#506784;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    position: absolute;
+    z-index: -4;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

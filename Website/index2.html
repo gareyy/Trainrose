@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TrainRose - Visualise Train Data</title>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./style.css" />
+    
+    <script src="https://cdn.plot.ly/plotly-2.1.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.21.3/full/pyodide.js"></script>
+    
+    <script src="scrip2.js"></script>
+
+
+</head>
+<body>
+    <div class="splash">
+        <div class="loader"></div>
+    </div>
+    <div class="left">
+        <div class="row">
+            <div class="logo">Train Rose 1</div>
+            <div class="col">
+                <div id="one" class="box">
+                    <input id="one" class="stationinput" type="text" spellcheck="false" placeholder="Petrie station">
+                    <i unselectable="on" id="one" class="downarrow"></i>
+                </div>
+                <div id="station1" class="stationdropdown"></div>
+            </div>
+            <div class="space"></div>
+            <div class="col">
+                <div id="three" class="box">
+                    <input id="three" class="monthinput from" type="text" spellcheck="false" placeholder="2022-06">
+                    <i id="three" class="downarrow"></i>
+                </div>
+                <div class="monthdropdown"></div>
+            </div>
+            <div class="space"></div>
+            <div class="col">
+                <div id="four" class="box">
+                    <input id="four" class="monthinput to" type="text" spellcheck="false" placeholder="2022-07">
+                    <i unselectable="on" id="four" class="downarrow"></i>
+                </div>
+                <div class="monthdropdown"></div>
+            </div>     
+        </div>
+        <div class="yspace"></div>
+        <div class="row">
+            <div id="seven" class="button on">Weekday 12am-8:30am</div>
+            <div class="space"></div>
+            <div id="seven"class="button on">Weekday 8:30am-3pm</div>
+            <div class="space"></div>
+            <div id="seven" class="button on">Weekday 3pm-7pm</div>
+            <div class="space"></div>
+            <div id="seven" class="button on">Weekday 7pm-12am</div>
+            <div class="space"></div>
+            <div id="seven" class="button on">Weekend</div>
+        </div>
+        <div class="yspace"></div>
+        <div id="chart1" class="graphcontainer"></div>
+    </div>
+    <div class="divider"></div>
+    <div class="right">
+        <div class="row">
+            <div class="logo">Train Rose 2</div>
+            <div class="col">
+                <div id="two" class="box">
+                    <input id="two" class="stationinput" type="text" spellcheck="false" placeholder="Central station">
+                    <i unselectable="on" id="two" class="downarrow"></i>
+                </div>
+                <div class="stationdropdown"></div>
+            </div>
+            <div class="space"></div>
+            <div class="col">
+                <div id="five" class="box">
+                    <input id="five" class="monthinput from" type="text" spellcheck="false" placeholder="2022-06">
+                    <i id="five" class="downarrow"></i>
+                </div>
+                <div class="monthdropdown"></div>
+            </div>
+            <div class="space"></div>
+            <div class="col">
+                <div id="six" class="box">
+                    <input id="six" class="monthinput to" type="text" spellcheck="false" placeholder="2022-07">
+                    <i unselectable="on" id="six" class="downarrow"></i>
+                </div>
+                <div class="monthdropdown"></div>
+            </div>     
+        </div>
+        <div class="yspace"></div>
+        <div class="row">
+            <div id="eight" class="button on">Weekday 12am-8:30am</div>
+            <div class="space"></div>
+            <div id="eight" class="button on">Weekday 8:30am-3pm</div>
+            <div class="space"></div>
+            <div id="eight" class="button on">Weekday 3pm-7pm</div>
+            <div class="space"></div>
+            <div id="eight" class="button on">Weekday 7pm-12am</div>
+            <div class="space"></div>
+            <div id="eight" class="button on">Weekend</div>
+        </div>
+        <div class="yspace"></div>
+        <div id="chart2" class="graphcontainer"></div>
+    </div>      
+</body>
+</html>

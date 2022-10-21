@@ -63,7 +63,8 @@ async function main() {
     createKeyDownListener();
 
     document.querySelector(".splash").style.zIndex = -6;
-    document.querySelector(".splash").style.marginLeft= "4000px";
+    //document.querySelector(".splash").style.marginLeft= "4000px"; // most likely these two pieces of code just move the loading screen out of the way
+    document.querySelector(".splash").style.opacity = 0;
 }
 
 function plot(graph, chart) {

@@ -1,15 +1,3 @@
-.splash {
-    color: white;
-    background-color: #111111;;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    z-index: 6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 body {
     margin: 0;
     display: flex;
@@ -28,6 +16,20 @@ input {
 
 input:focus {
     outline: none;
+}
+
+.splash {
+    background-color: #111111;;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+marquee {
+    height: 100vh;
 }
 
 .stationinput {
@@ -75,7 +77,7 @@ input:focus {
     -webkit-user-select: none;
     -o-user-select: none;
     user-select: none;
-    
+
 }
 
 .box:hover {
@@ -93,8 +95,10 @@ input:focus {
     max-height: 200px;
     overflow: scroll;
     overflow-x: hidden;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
     z-index: 4;
 }
 
@@ -112,8 +116,10 @@ input:focus {
     max-height: 200px;
     overflow: scroll;
     overflow-x: hidden;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
     z-index: 4;
 }
 
@@ -135,16 +141,20 @@ input:focus {
     cursor: pointer;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #506784;
-    opacity: 1; /* Firefox */
+    opacity: 1;
+    /* Firefox */
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder {
+    /* Microsoft Edge */
     color: #506784;
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
     color: #506784;
 }
 
@@ -169,7 +179,7 @@ input:focus {
     height: 100vh;
     min-width: 1px;
     background-color: #506784;
-    
+
 }
 
 .row {
@@ -197,7 +207,7 @@ input:focus {
     -o-user-select: none;
     user-select: none;
     white-space: nowrap;
-}  
+}
 
 .fixed {
     min-width: 100%;
@@ -230,30 +240,8 @@ input:focus {
     border: 1px solid #506784;
     flex-grow: 1;
     margin-bottom: 16px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.loader {
-    border: 2px solid #AAAAAA;
-    border-radius: 50%;
-    border-top: 2px solid#506784;
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 2s linear infinite; /* Safari */
-    animation: spin 2s linear infinite;
-    position: absolute;
-    z-index: -4;
-}
-
-/* Safari */
-@-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-}
-  
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}

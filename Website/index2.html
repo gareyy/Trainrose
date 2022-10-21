@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>TrainRose - Visualise Train Data</title>
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="./style.css" />
-    
+
     <script src="https://cdn.plot.ly/plotly-2.1.0.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.21.3/full/pyodide.js"></script>
-    
+
     <script src="scrip2.js"></script>
 
 
 </head>
+
 <body>
     <div class="splash">
-        <div class="loader"></div>
+        <marquee behavior="alternate" scrollamount="40"> 
+            <!-- marquee will be depreceated soon, replcae it
+                also, the drop down arrows are shown during the loading screen, get rid of them
+                it hugs the wall for a second for some fucking reason????
+            -->
+            <marquee behavior="alternate" scrollamount="40" direction="down">
+                <img src="./trainroselogo.png" alt="TrainRose Logo" width="368" height="137">
+            </marquee>
+        </marquee>
     </div>
     <div class="left">
         <div class="row">
@@ -43,13 +53,13 @@
                     <i unselectable="on" id="four" class="downarrow"></i>
                 </div>
                 <div class="monthdropdown"></div>
-            </div>     
+            </div>
         </div>
         <div class="yspace"></div>
         <div class="row">
             <div id="seven" class="button on">Weekday 12am-8:30am</div>
             <div class="space"></div>
-            <div id="seven"class="button on">Weekday 8:30am-3pm</div>
+            <div id="seven" class="button on">Weekday 8:30am-3pm</div>
             <div class="space"></div>
             <div id="seven" class="button on">Weekday 3pm-7pm</div>
             <div class="space"></div>
@@ -86,7 +96,7 @@
                     <i unselectable="on" id="six" class="downarrow"></i>
                 </div>
                 <div class="monthdropdown"></div>
-            </div>     
+            </div>
         </div>
         <div class="yspace"></div>
         <div class="row">
@@ -102,6 +112,7 @@
         </div>
         <div class="yspace"></div>
         <div id="chart2" class="graphcontainer"></div>
-    </div>      
+    </div>
 </body>
+
 </html>

@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-11-10T03:05:19.533Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="Bnep88GQR4GytA6FnIZP" version="20.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-10T03:11:03.869Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="XRj2f3zqKs--VcXo0ncw" version="20.5.3" type="github">
   <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
-    <mxGraphModel dx="782" dy="-632" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+    <mxGraphModel dx="652" dy="-710" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -78,9 +78,6 @@
         </mxCell>
         <mxCell id="N7aEV-dbIPcAcxgwemj--12" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="VLVfY5COUamwaYJ4DuAj-15" vertex="1">
           <mxGeometry x="5" y="50" width="10" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="N7aEV-dbIPcAcxgwemj--40" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;fontSize=8;" parent="VLVfY5COUamwaYJ4DuAj-15" vertex="1">
-          <mxGeometry x="5" y="220" width="10" height="170" as="geometry" />
         </mxCell>
         <mxCell id="N7aEV-dbIPcAcxgwemj--7" value="Load Website" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;entryX=0.139;entryY=0.128;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="N7aEV-dbIPcAcxgwemj--4" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
@@ -160,7 +157,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="N7aEV-dbIPcAcxgwemj--41" value="Request menu to &lt;br&gt;change plot settings&lt;br&gt;(station, months)" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;fontSize=8;" parent="1" edge="1">
+        <mxCell id="N7aEV-dbIPcAcxgwemj--41" value="Request dropdown&lt;br&gt;&amp;nbsp;menu to &lt;br&gt;change plot settings&lt;br&gt;(station, months)" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;fontSize=8;" parent="1" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="122" y="1520" as="sourcePoint" />
             <mxPoint x="230" y="1520" as="targetPoint" />
@@ -187,6 +184,18 @@
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="123" y="1709" as="sourcePoint" />
             <mxPoint x="229" y="1709" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F-zkN96BAi2PTtNFwU-7-7" value="Request allowed inputs&lt;br&gt;(stations, months)" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;fontSize=9;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="240" y="1540" as="sourcePoint" />
+            <mxPoint x="347" y="1540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F-zkN96BAi2PTtNFwU-7-8" value="Return div information&lt;br&gt;for dropdown menu" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;fontSize=9;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="347" y="1582" as="sourcePoint" />
+            <mxPoint x="244" y="1582" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
